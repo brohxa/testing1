@@ -1,0 +1,379 @@
+@font-face {
+  src: url("../Assets/fonts/Aminetta\ \(free\).otf");
+  font-family: "Aminetta";
+}
+
+/* universal padding */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+/* body / background */
+body {
+  width: 100%;
+  height: 230vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(117, 61, 70),
+    #2b5876,
+    #4e4376
+  );
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+/* socials */
+.socials {
+  position: fixed;
+  display: flex;
+  top: 50%;
+  z-index: 999;
+  transition: 0.3s;
+  left: 0%;
+  background-color: rgb(30, 167, 172);
+  flex-direction: column;
+}
+
+.socials a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin: 15px;
+  transition: 0.2s;
+}
+.socials a:hover {
+  transform: scale(1.4);
+}
+
+/* navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  z-index: 999;
+  transition: 0.3s;
+  background-color: rgba(163, 163, 163, 0.4);
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+}
+.navbar a {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  line-height: 10vh;
+  transition: 0.3s;
+}
+
+/* hover effect on NAVBAR A tag */
+.navbar a:hover {
+  background-color: rgba(185, 185, 185, 0.3);
+  font-size: 16px;
+}
+
+/* navbar effect when SCROLLING */
+.navbar.active {
+  background-color: rgb(36, 36, 36);
+}
+/* main wrapper */
+.wrapper {
+  width: 65%;
+  height: 140vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+  background-color: white;
+  border-radius: 4px;
+}
+/* main-logo-text */
+
+.main-logo-text {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  font-family: "Aminetta";
+  font-size: 100px;
+  font-weight: 100;
+}
+/* secondary-logo-text */
+
+.secondary-logo-text {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+/* BEFORE/AFTER FOR SECONDARY LOGO TEXT */
+
+.secondary-logo-text::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #fff;
+  top: 50%;
+  left: -80%;
+}
+.secondary-logo-text::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #fff;
+  top: 50%;
+  left: 120%;
+}
+/* heading */
+.wrapper h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10vh;
+  font-size: 40px;
+}
+/* SECONDARY HEADING */
+.secondary-title {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+/* felxbox */
+.main-image-container {
+  width: 100%;
+  height: 70vh;
+}
+.top-images {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  margin-top: 20vh;
+}
+.top-images a {
+  overflow: hidden;
+  display: block;
+  width: 33.3333%;
+  height: 100%;
+  transition: 0.2s;
+}
+.top-images a:hover {
+  transform: scale(2.02);
+  box-shadow: -3px -2px 15px 8px rgba(0, 0, 0, 0.71);
+}
+.bot-images a:hover {
+  transform: scale(2.02);
+  box-shadow: -3px -2px 15px 8px rgba(0, 0, 0, 0.71);
+}
+
+.bot-images {
+  margin-top: 0px;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+}
+.top-images img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.bot-images img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.bot-images a {
+  overflow: hidden;
+  display: block;
+  width: 33.3333%;
+  height: 100%;
+  transition: 0.2s;
+}
+/* END OF IMAGES */
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  height: 40vh;
+  background: black;
+  position: absolute;
+  position: relative;
+  top: 200vh;
+}
+footer .address {
+  color: white;
+  position: absolute;
+  left: 20%;
+  transform: translate(-50%);
+  font-family: "Open Sans Condensed", sans-serif;
+  top: 50%;
+}
+footer .phone {
+  color: white;
+  position: absolute;
+  transform: translate(-50%);
+  left: 40%;
+  font-family: "Open Sans Condensed", sans-serif;
+  top: 50%;
+}
+footer .mobile {
+  color: white;
+  position: absolute;
+  transform: translate(-50%);
+  left: 60%;
+  font-family: "Open Sans Condensed", sans-serif;
+  top: 50%;
+}
+footer .email {
+  color: white;
+  position: absolute;
+  transform: translate(-50%);
+  left: 80%;
+  font-family: "Open Sans Condensed", sans-serif;
+  top: 50%;
+}
+
+/* -------------------------MEDIA FOR IPAD -------------------- */
+
+@media all and (max-width: 1024px) {
+  .top-images {
+    margin-top: 2vh;
+  }
+  body {
+    height: 150vh;
+  }
+  footer {
+    top: 150vh;
+    height: 20vh;
+  }
+  .wrapper {
+    height: 90vh;
+    width: 80%;
+  }
+}
+
+/* -------------------------MEDIA FOR SMALL IPAD -------------------- */
+
+@media all and (max-width: 768px) {
+  body {
+    height: 150vh;
+  }
+  .wrapper {
+    width: 85%;
+    height: 90vh;
+  }
+}
+/* -------------------------MEDIA FOR PHONE -------------------- */
+
+@media all and (max-width: 414px) {
+  body {
+    height: 150vh;
+  }
+  .wrapper {
+    width: 90%;
+    height: 80vh;
+  }
+  .wrapper img {
+    top: 45%;
+  }
+  .wrapper h1 {
+    top: 80%;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .secondary-title {
+    font-size: 10px;
+  }
+  .main-logo-text {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    font-family: "Aminetta";
+    font-size: 80px;
+    font-weight: 100;
+  }
+
+  .secondary-logo-text {
+    font-size: 10px;
+  }
+
+  .secondary-logo-text::before {
+    height: 1px;
+    left: -120%;
+  }
+  .secondary-logo-text::after {
+    height: 1px;
+  }
+  .navbar a {
+    padding-left: 2vh;
+    padding-right: 2vh;
+  }
+  .socials {
+    position: absolute;
+    display: flex;
+    top: 10%;
+    transition: 0.3s;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgb(30, 167, 172);
+    flex-direction: row;
+  }
+
+  footer .address {
+    font-size: 11px;
+    left: 15%;
+  }
+  footer .phone {
+    left: 42%;
+    font-size: 11px;
+  }
+  footer .mobile {
+    left: 65%;
+    font-size: 11px;
+  }
+  footer .email {
+    font-size: 11px;
+    left: 87%;
+  }
+}
+/* -------------------------MEDIA FOR PHONE -------------------- */
+
+@media all and (max-width: 414px) {
+  footer {
+    width: 103%;
+  }
+  footer .address {
+    font-size: 9px;
+    left: 15%;
+  }
+  footer .phone {
+    left: 42%;
+    font-size: 9px;
+  }
+  footer .mobile {
+    left: 65%;
+    font-size: 9px;
+  }
+  footer .email {
+    font-size: 9px;
+    left: 87%;
+  }
+}
